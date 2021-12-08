@@ -9,13 +9,15 @@ namespace Entidades
     public class Paciente : Persona
     {
         private ObraSocial obraSocial;
+        private Especialidades atencion;
 
         private Paciente(string nombre, string apellid, int dni, short edad) : base(nombre, apellid, dni, edad)
         {
         }
-        public Paciente(string nombre, string apellid, int dni, short edad,ObraSocial obra) : this(nombre, apellid, dni, edad)
+        public Paciente(string nombre, string apellid, int dni, short edad,ObraSocial obra,Especialidades atencion) : this(nombre, apellid, dni, edad)
         {
             this.obraSocial = obra;
+            this.atencion = atencion;
         }
 
         /// <summary>

@@ -4,21 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entidades
-        public enum Especialidades
-        {
-            Cardiologia,
-            Dermatologia,
-            Diabetologia,
-            Laboratorio,
-            Odontologia,
-            Oncologia,
-            Rehabilitacion,
-            Hemoterapia
-        }
-{
+namespace Entidades 
+{ 
+    
     public class Medico : Persona
     {
+        private List<Medico> medicos;
         Especialidades especialidad;
         private bool estaAtendiendo;
 
@@ -57,6 +48,15 @@ namespace Entidades
         public Medico(string nombre, string apellid, int dni, short edad,Especialidades especialidad) : this(nombre, apellid, dni, edad)
         {
             this.Especialidad = especialidad;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return this.Dni == ((Medico)obj).Dni;
+        }
+        public override int GetHashCode()
+        {
+            return (Dni).GetHashCode();
         }
 
     }

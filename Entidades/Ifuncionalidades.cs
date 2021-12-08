@@ -8,10 +8,22 @@ namespace Entidades
 {
     interface Ifuncionalidades
     {
-        public void AgregarPaciente(string nombre, string apellid, int dni, short edad, ObraSocial obra);
-        public void AgregarMedico(string nombre, string apellid, int dni, short edad, Especialidades especialidad);
+        //public void iniciarConsulta(Medico medico, Paciente paciente);
+        public string AgregarPaciente(string nombre, string apellid, int dni, short edad, ObraSocial obra,Especialidades atencion);
+        public string AgregarMedico(string nombre, string apellid, int dni, short edad, Especialidades especialidad);
         public string MostrarPacientes();
-        public string MostrarMedicosDisponibles();
+        public string MostrarMedicos();
+    }
+    public enum Especialidades
+    {
+        Cardiologia,
+        Dermatologia,
+        Diabetologia,
+        Laboratorio,
+        Odontologia,
+        Oncologia,
+        Rehabilitacion,
+        Hemoterapia
     }
     public enum ObraSocial
     {
