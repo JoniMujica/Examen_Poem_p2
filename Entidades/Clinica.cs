@@ -15,8 +15,9 @@ namespace Entidades
 
 
         
-        public string MostrarPacientes()
+        public Queue <Paciente> MostrarPacientes()
         {
+            /*
             StringBuilder sb = new StringBuilder();
             int index = 1;
             foreach (Paciente paciente in this.controladorPaciente.Paciente)
@@ -25,13 +26,17 @@ namespace Entidades
                 index++;
             }
             return sb.ToString();
+            */
+            return controladorPaciente.Paciente;
         }
 
-        public string MostrarMedicos()
+        public List<Medico> MostrarMedicos()
         {
+            /*
             StringBuilder sb = new StringBuilder();
             foreach (Medico medico in this.controladorMedico.Medicos)
             {
+                /*
                 if (!medico.EstaAtendiendo)
                 {
                     sb.AppendLine($"Nombre:{medico.Nombre} Apellido: {medico.Apellido} Especialidad: {medico.Especialidad} Estado: Disponible");
@@ -40,8 +45,10 @@ namespace Entidades
                 {
                     sb.AppendLine($"Nombre:{medico.Nombre} Apellido: {medico.Apellido} Especialidad: {medico.Especialidad} Estado: Atendiendo");
                 }
+
             }
-            return sb.ToString();
+            return sb.ToString();*/
+            return controladorMedico.Medicos;
         }
         /// <summary>
         /// Agrega los pacientes a la cola de espera  a que se desocupen y verifica que estos no esten en la cola antes de agregarlos
@@ -52,7 +59,7 @@ namespace Entidades
         /// <param name="edad">se le da la EDAD al paciente</param>
         /// <param name="obra">se le da el tipo de ObraSocial al paciente</param>
         /// <param name="atencion">se le da el tipo de Atencion al paciente</param>
-        public string AgregarPaciente(string nombre, string apellid, int dni, short edad, ObraSocial obra,Especialidades atencion)
+        public bool AgregarPaciente(string nombre, string apellid, int dni, short edad, ObraSocial obra,Especialidades atencion)
         {
             Paciente paciente1 = new Paciente(nombre, apellid, dni, edad, obra,atencion);
             /*if (!controladorPaciente.Paciente.Contains(paciente1))
@@ -61,17 +68,22 @@ namespace Entidades
             }*/
             if (controladorPaciente + paciente1)
             {
-                return $"Se agrego correctamente al paciente {paciente1.Nombre} {paciente1.Apellido} DNI: {paciente1.Dni}";
+                return true;
+                //return $"Se agrego correctamente al paciente {paciente1.Nombre} {paciente1.Apellido} DNI: {paciente1.Dni}";
             }
+            return false;
+            /*
             else
             {
-                return "No se pudo agregar al paciente solicitado, el paciente ya se encuentr en la lista de espera";
-            }
+
+                //return "No se pudo agregar al paciente solicitado, el paciente ya se encuentr en la lista de espera";
+            }*/
         }
 
-        public string AgregarMedico(string nombre, string apellid, int dni, short edad, Especialidades especialidad)
+        public bool AgregarMedico(string nombre, string apellid, int dni, short edad, Especialidades especialidad)
         {
             Medico medico1 = new Medico(nombre, apellid, dni, edad, especialidad);
+            /*
             if (controladorMedico + medico1 )
             {
                 return $"Se agrego correctamente al Medico {medico1.Nombre} {medico1.Apellido} DNI: {medico1.Dni}";
@@ -79,7 +91,12 @@ namespace Entidades
             else
             {
                 return "No se pudo agregar al paciente solicitado, el paciente ya se encuentr en la lista de espera";
+            }*/
+            if (controladorMedico + medico1)
+            {
+                return true;
             }
+            return false;
         }
         /*
         public void iniciarConsulta(Medico medico, Paciente paciente)

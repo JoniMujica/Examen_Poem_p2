@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Archivos w11\\Documentos\\ExamenProemv2\\Entidades\\Entidades\\Entidades.csproj": {}
+    "D:\\Archivos w11\\Documentos\\ExamenProemv2\\Examen_Poem_p2\\Entidades\\Entidades.csproj": {}
   },
   "projects": {
-    "D:\\Archivos w11\\Documentos\\ExamenProemv2\\Entidades\\Entidades\\Entidades.csproj": {
+    "D:\\Archivos w11\\Documentos\\ExamenProemv2\\Examen_Poem_p2\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Archivos w11\\Documentos\\ExamenProemv2\\Entidades\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "D:\\Archivos w11\\Documentos\\ExamenProemv2\\Examen_Poem_p2\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "D:\\Archivos w11\\Documentos\\ExamenProemv2\\Entidades\\Entidades\\Entidades.csproj",
+        "projectPath": "D:\\Archivos w11\\Documentos\\ExamenProemv2\\Examen_Poem_p2\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\jonim\\.nuget\\packages\\",
-        "outputPath": "D:\\Archivos w11\\Documentos\\ExamenProemv2\\Entidades\\Entidades\\obj\\",
+        "outputPath": "D:\\Archivos w11\\Documentos\\ExamenProemv2\\Examen_Poem_p2\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jonim\\AppData\\Roaming\\NuGet\\NuGet.Config",

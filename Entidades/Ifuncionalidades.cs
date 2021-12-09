@@ -9,10 +9,10 @@ namespace Entidades
     interface Ifuncionalidades
     {
         //public void iniciarConsulta(Medico medico, Paciente paciente);
-        public string AgregarPaciente(string nombre, string apellid, int dni, short edad, ObraSocial obra,Especialidades atencion);
-        public string AgregarMedico(string nombre, string apellid, int dni, short edad, Especialidades especialidad);
-        public string MostrarPacientes();
-        public string MostrarMedicos();
+        public bool AgregarPaciente(string nombre, string apellid, int dni, short edad, ObraSocial obra,Especialidades atencion);
+        public bool AgregarMedico(string nombre, string apellid, int dni, short edad, Especialidades especialidad);
+        public Queue<Paciente> MostrarPacientes();
+        public List<Medico> MostrarMedicos();
     }
     public enum Especialidades
     {
