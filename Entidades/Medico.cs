@@ -9,7 +9,7 @@ namespace Entidades
     
     public class Medico : Persona
     {
-        private List<Medico> medicos;
+        //private List<Medico> medicos;
         Especialidades especialidad;
         private bool estaAtendiendo;
 

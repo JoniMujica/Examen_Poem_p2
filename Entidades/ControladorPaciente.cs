@@ -9,7 +9,7 @@ namespace Entidades
     public class ControladorPaciente
     {
         private Queue<Paciente> paciente;
-        private ControladorPaciente()
+        public ControladorPaciente()
         {
             paciente = new Queue<Paciente>();
         }

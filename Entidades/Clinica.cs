@@ -13,11 +13,31 @@ namespace Entidades
         private ControladorPaciente controladorPaciente;
         private Consulta consulta;
 
+        public List<Medico> CMLista 
+        { 
+            get
+            {
+                return controladorMedico.Medicos;
+            } 
+        }
+        public Queue<Paciente> CMCola
+        {
+            get
+            {
+                return controladorPaciente.Paciente;
+            }
+        }
 
-        
+        public Clinica(ControladorMedicos controladorMedico, ControladorPaciente controladorPaciente, Consulta consulta)
+        {
+            this.controladorMedico = controladorMedico;
+            this.controladorPaciente = controladorPaciente;
+            this.consulta = consulta;
+        }
+        /*
         public Queue <Paciente> MostrarPacientes()
         {
-            /*
+            
             StringBuilder sb = new StringBuilder();
             int index = 1;
             foreach (Paciente paciente in this.controladorPaciente.Paciente)
@@ -26,13 +46,13 @@ namespace Entidades
                 index++;
             }
             return sb.ToString();
-            */
+            
             return controladorPaciente.Paciente;
         }
 
         public List<Medico> MostrarMedicos()
         {
-            /*
+            
             StringBuilder sb = new StringBuilder();
             foreach (Medico medico in this.controladorMedico.Medicos)
             {
@@ -47,9 +67,10 @@ namespace Entidades
                 }
 
             }
-            return sb.ToString();*/
+            return sb.ToString();
             return controladorMedico.Medicos;
-        }
+        }*/
+
         /// <summary>
         /// Agrega los pacientes a la cola de espera  a que se desocupen y verifica que estos no esten en la cola antes de agregarlos
         /// </summary>

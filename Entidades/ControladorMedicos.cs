@@ -9,7 +9,7 @@ namespace Entidades
     public class ControladorMedicos
     {
         private List<Medico> medicos;
-        private ControladorMedicos()
+        public ControladorMedicos()
         {
             medicos = new List<Medico>();
         }

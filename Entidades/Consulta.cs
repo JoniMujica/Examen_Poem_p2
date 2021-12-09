@@ -12,7 +12,7 @@ namespace Entidades
         private Paciente paciente;
         private Medico medico;
 
-        private Consulta()
+        public Consulta()
         {
             this.estado = true;
         }
