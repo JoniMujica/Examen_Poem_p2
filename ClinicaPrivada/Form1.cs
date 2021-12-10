@@ -20,6 +20,7 @@ namespace ClinicaPrivada
         Clinica clinica;
         FormuAgregarMedico agregadoMedico;
         FormListaMedicos formListaMedicos;
+        
         public Form1()
         {
             InitializeComponent();
@@ -133,6 +134,9 @@ namespace ClinicaPrivada
         }
 
         private Form activeForm = null;
+
+       // public Clinica Clinica { get { return clinica; } set { clinica = value; } }
+
         private void AbrirPanelHijo(Form formularioHijo)
         {
            

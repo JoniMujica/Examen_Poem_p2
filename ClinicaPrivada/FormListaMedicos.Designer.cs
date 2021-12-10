@@ -92,7 +92,7 @@ namespace ClinicaPrivada
             this.grupoMuestraMedicoList.AutoSize = true;
             this.grupoMuestraMedicoList.Controls.Add(this.RBDisponible);
             this.grupoMuestraMedicoList.Controls.Add(this.RBOcupados);
-            this.grupoMuestraMedicoList.Location = new System.Drawing.Point(574, 22);
+            this.grupoMuestraMedicoList.Location = new System.Drawing.Point(571, 25);
             this.grupoMuestraMedicoList.Name = "grupoMuestraMedicoList";
             this.grupoMuestraMedicoList.Size = new System.Drawing.Size(101, 100);
             this.grupoMuestraMedicoList.TabIndex = 1;
@@ -113,7 +113,7 @@ namespace ClinicaPrivada
             // RBOcupados
             // 
             this.RBOcupados.AutoSize = true;
-            this.RBOcupados.Location = new System.Drawing.Point(7, 23);
+            this.RBOcupados.Location = new System.Drawing.Point(7, 22);
             this.RBOcupados.Name = "RBOcupados";
             this.RBOcupados.Size = new System.Drawing.Size(79, 19);
             this.RBOcupados.TabIndex = 0;
@@ -125,7 +125,7 @@ namespace ClinicaPrivada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 445);
+            this.ClientSize = new System.Drawing.Size(684, 445);
             this.Controls.Add(this.grupoMuestraMedicoList);
             this.Controls.Add(this.tablaMedicos);
             this.Name = "FormListaMedicos";

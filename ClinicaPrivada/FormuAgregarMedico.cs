@@ -52,6 +52,8 @@ namespace ClinicaPrivada
             {
                 CBboxEspecialidaMedic.Items.Add(esp);
             }
+            CBboxEspecialidaMedic.SelectedIndex = 0;
+            CBboxEspecialidaMedic.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void BTNAgregarMedico_Click(object sender, EventArgs e)

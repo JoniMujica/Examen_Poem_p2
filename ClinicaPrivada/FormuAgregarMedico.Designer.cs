@@ -34,13 +34,13 @@ namespace ClinicaPrivada
             this.TXTApellidoMedic = new System.Windows.Forms.TextBox();
             this.LBLApellidoMedic = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BTNAgregarMedico = new System.Windows.Forms.Button();
             this.CBboxEspecialidaMedic = new System.Windows.Forms.ComboBox();
             this.LBLEspecialidadMedic = new System.Windows.Forms.Label();
             this.TXTEdadMedic = new System.Windows.Forms.TextBox();
             this.LBLEdadMedic = new System.Windows.Forms.Label();
             this.TXTDniMedic = new System.Windows.Forms.TextBox();
             this.LBLDNIMedic = new System.Windows.Forms.Label();
-            this.BTNAgregarMedico = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,7 +95,17 @@ namespace ClinicaPrivada
             this.groupBox1.Size = new System.Drawing.Size(313, 331);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Agregar Medico";
+            // 
+            // BTNAgregarMedico
+            // 
+            this.BTNAgregarMedico.Location = new System.Drawing.Point(33, 282);
+            this.BTNAgregarMedico.Name = "BTNAgregarMedico";
+            this.BTNAgregarMedico.Size = new System.Drawing.Size(161, 23);
+            this.BTNAgregarMedico.TabIndex = 10;
+            this.BTNAgregarMedico.Text = "AgregarMedico";
+            this.BTNAgregarMedico.UseVisualStyleBackColor = true;
+            this.BTNAgregarMedico.Click += new System.EventHandler(this.BTNAgregarMedico_Click);
             // 
             // CBboxEspecialidaMedic
             // 
@@ -146,16 +156,6 @@ namespace ClinicaPrivada
             this.LBLDNIMedic.Size = new System.Drawing.Size(27, 15);
             this.LBLDNIMedic.TabIndex = 4;
             this.LBLDNIMedic.Text = "DNI";
-            // 
-            // BTNAgregarMedico
-            // 
-            this.BTNAgregarMedico.Location = new System.Drawing.Point(33, 282);
-            this.BTNAgregarMedico.Name = "BTNAgregarMedico";
-            this.BTNAgregarMedico.Size = new System.Drawing.Size(161, 23);
-            this.BTNAgregarMedico.TabIndex = 10;
-            this.BTNAgregarMedico.Text = "AgregarMedico";
-            this.BTNAgregarMedico.UseVisualStyleBackColor = true;
-            this.BTNAgregarMedico.Click += new System.EventHandler(this.BTNAgregarMedico_Click);
             // 
             // FormuAgregarMedico
             // 
